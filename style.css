@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #02aab0, #00cdac);
+    font-family: sans-serif;
+    color: white;
+    margin: 0 auto;
+}
+.location, .temp{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temp{
+    flex-direction: column;
+}
+.degree-sec{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius:1em ;
+}
+.degree-sec span{
+  margin: 10px;
+  font-size: 30px;
+}
+.degree-sec h2{
+    font-size: 40px;
+}
