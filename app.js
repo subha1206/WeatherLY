@@ -24,7 +24,8 @@ window.addEventListener('load', () => {
                 .then(data => {
 
                     // take out the data from api
-
+                    console.log(data);
+                    
                     const { temperature, summary, icon} = data.currently;
                     tempdegreesec.textContent = temperature;
                     tempzone.textContent = data.timezone;
@@ -56,5 +57,6 @@ window.addEventListener('load', () => {
         // const curIcon = 'rain'
         skycons.play();
         return skycons.set(iconId, 'PARTLY_CLOUDY_DAY')
-  }
+    }
+    
 })
