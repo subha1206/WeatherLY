@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #02aab0, #00cdac);
+    /* background-image: linear-gradient(to right, #02aab0, #00cdac); */
+    background-image: url(weather.jpg);
     font-family: sans-serif;
     color: white;
     margin: 0 auto;
@@ -32,6 +33,8 @@ body{
     border: 1px solid white;
     padding: 10px;
     border-radius:1em ;
+    
+    
 }
 .degree-sec span{
   margin: 10px;
@@ -39,4 +42,11 @@ body{
 }
 .degree-sec h2{
     font-size: 40px;
+
+}
+
+.temp-desc{
+    font-size: 30px;
+   
+    
 }
