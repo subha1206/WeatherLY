@@ -8,7 +8,10 @@ window.addEventListener('load', () => {
     let tempdegreesec = document.querySelector('.temp-degree');
     let tempDesc = document.querySelector('.temp-desc');
     let change = document.querySelector('.degree-sec');
-    let changeS = document.querySelector('.degree-sec span')
+    let changeS = document.querySelector('.degree-sec span');
+    let humid = document.querySelector('.humidity');
+    let uvInd = document.querySelector('.uvIndex');
+    let windSpd = document.querySelector('.wind');
 
 
     if (navigator.geolocation) {
@@ -26,10 +29,13 @@ window.addEventListener('load', () => {
                     // take out the data from api
                     console.log(data);
                     
-                    const { temperature, summary, icon} = data.currently;
+                    const { temperature, summary, icon, humidity, windSpeed,uvIndex} = data.currently;
                     tempdegreesec.textContent = temperature;
                     tempzone.textContent = data.timezone;
                     tempDesc.textContent = summary;
+                    humid.textContent = humidity;
+                    uvInd.textContent = uvIndex;
+                    windSpd.textContent = windSpeed;
 
                     let cel = (temperature - 32) * (5 / 9);
 
